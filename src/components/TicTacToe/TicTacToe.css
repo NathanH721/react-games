@@ -1,8 +1,10 @@
-.TicTacToe{
-    text-align: center;
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.title {
+.Title {
     margin-top: 50px;
     font-size: 60px;
     display: flex;
@@ -10,23 +12,37 @@
     align-items: center;
 }
 
-.boxes {
-    display: flex;
-    height: 180px;
-    width:180px;
-    background: #06060c;
-    border: 4px solid #24242f;
-    border-radius: 12px;
+.Board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
     cursor: pointer;
+    position: relative;
 }
 
-.board {
-    height: 600px;
-    width: 564px;
+.Tile {
+    color: currentColor;
+    font-size: 2em;
     display: flex;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.boxes img {
-    margin: 30px;
+.right-border {
+    border-right: 0.2em solid #808080;
+}
+
+.bottom-border {
+    border-bottom: 0.2em solid #808080;
+}
+
+.x-hover:hover::after {
+    content: "X";
+    opacity: 0.4;
+}
+
+.o-hover:hover::after {
+    content: "O";
+    opacity: 0.4;
 }
