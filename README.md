@@ -1,8 +1,7 @@
 # React Games
 
-- Currently the only available game is Tic-Tac-Toe, which can be navigated to via the button on the homepage, or by navigating to /TicTacToe
-- There is currently a bug where once the game has been won, the alert will not appear until another move is attempted
-- There is currently a bug where if one player places three markers in an L or backwards L pattern, it will be incorrectly identified as a win.
+- Currently the only available game is Tic-Tac-Toe, which can be navigated to via the button on the homepage, or by navigating to /TicTacToe.
+- Functionality is currently still limited to only placing X's or O's, there will be no notification of wins at the current stage.
 
 ## Please note this is a work-in-progress application. Some functionality may be minimal or not yet implemented, and files may not be optimized fully.
 
